@@ -8,6 +8,21 @@ const lamp = document.getElementById("lamp");
 const btn = document.getElementById("btn");
 
 // Dico al pulsante di cambiare immagine al click
+// btn.addEventListener("click", function() {
+// lamp.src = "./img/yellow_lamp.png";
+// })
+
+let isFirstImage = true
+
 btn.addEventListener("click", function() {
-  lamp.src = "./img/yellow_lamp.png";
-});
+
+if (isFirstImage) {
+    lamp.src = "./img/yellow_lamp.png";
+    btn.textContent = "Spegni la lampadina"
+  } else {
+    lamp.src = "./img/white_lamp.png";
+    btn.textContent = "Accendi la lampadina"
+  }
+
+isFirstImage = !isFirstImage
+})
