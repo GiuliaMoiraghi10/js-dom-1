@@ -1,0 +1,23 @@
+/* DEFAULT */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+img{
+    width: 500px;
+    margin-left: 70px;
+}
+
+h1{
+    margin-bottom: 50px;
+}
